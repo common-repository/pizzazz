@@ -1,0 +1,231 @@
+#pizzazz {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 700px;
+}
+
+#pizzazz a {
+    border: none;
+}
+
+#pizzazz .clearfix {
+    height: auto;
+}
+
+#pizzazz .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pi-container {
+    clear: both;
+    margin: 8px auto;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.pi-focus {
+    padding-bottom: 15px;
+}
+
+.pi-focus img {
+    display: block;
+}
+
+.pi-hide {
+    display: none;
+}
+
+div.pi-focus, div.pi-meta {
+    display: block;
+    float: left;
+}
+
+div.pi-focus {
+    width: 60%;
+}
+
+div.pi-meta {
+    width: 40%;
+}
+
+#pizzazz .pi-meta h2 {
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: normal;
+    font-size: 32px;
+    border-bottom: 1px dashed #dcdcdc;
+    padding-bottom: 5px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#pizzazz h2 span.pz-title {
+    font-weight: bold;
+}
+
+/* Slider Arrows */
+
+#pz-thumbSliderLeft, #pz-thumbSliderRight {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    text-decoration: none;
+    top: 45px;
+}
+
+#pz-thumbSliderLeft {
+    z-index: 1111;
+}
+
+#pz-thumbSliderLeft.sides {
+    left: 5px;
+}
+
+#pz-thumbSliderRight {
+    z-index: 1112;
+    right: -13px;
+}
+
+#pz-thumbSliderLeft span.pz-slider-btn, #pz-thumbSliderRight span.pz-slider-btn {
+    display: inline-block;
+    padding: 10px;
+    width: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background: url('../../../themebase/images/circle.png') 3px 11px no-repeat;
+}
+
+.carouselControls .prev span:before, .next span:before{
+    font-family: "dashicons";
+    content: "\f340";
+    vertical-align: middle;
+}
+
+.carouselControls .next span:before{
+    content: "\f344";
+}
+
+.carousel li a img:hover {
+    opacity: .6;
+}
+
+#carouselWrapper {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    left: -20px;
+}
+
+.carouselBox .carousel {
+    left: 25px !important;
+}
+
+.carouselBox .carousel li {
+    margin: 0px 10px 0px 0px;
+}
+
+/* Mobile */
+
+#pi-main-pane,
+#pizzazz.mobile div[id^="pi-focus"] {
+    overflow: visible;
+    width: 100%;
+}
+
+#pizzazz.mobile .pi-focus img {
+    border: 1px solid #dcdcdc;
+}
+
+#pizzazz.mobile .pi-container {
+    padding-bottom: 40px;
+}
+
+#pizzazz.mobile .pi-meta {
+    list-style-position: inside;
+}
+
+/* Social Share */
+/* https://gist.github.com/thebigreason/1296097 */
+
+.pi-social {
+    font-size: 1px;
+    text-align: right;
+    margin: 0 0 25px;
+}
+
+#pizzazz .pi-social iframe {
+    margin: 0;
+}
+
+.pi-social .facebook iframe {
+    vertical-align: middle;
+}
+
+.pi-social span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.pi-social span.twitter {
+    width: 75px;
+}
+
+.pi-social span.facebook {
+    width: 90px;
+}
+
+.pi-social span.google {
+    width: 65px;
+}
+
+/* Custom Fields */
+
+.custom-row {
+    margin: 3px 0;
+    font-size: .9em;
+}
+
+.custom-row:first-of-type {
+    margin-top: 20px;
+}
+
+.custom-row div {
+    float: left;
+}
+
+.pz-custom-label {
+    background-color: #F0F0F0;
+}
+
+.pz-custom-label span {
+    line-height: 26px;
+    padding: 0 15px;
+    display: inline-block;
+    min-width: 35px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.pz-custom-value {
+    line-height: 26px;
+    margin-left: 10px;
+    display: inline-block;
+    border-bottom: 1px dotted #ccc;
+}
+
+#pi-main-pane .pi-meta .custom-row:last-of-type .pz-custom-value {
+    border-bottom: none;
+}
+
+.pz-custom-label-container {
+    display: inline-block;
+}
+
+/* Video */
+.pi-video-connector:hover img {
+    opacity: .9;
+}
